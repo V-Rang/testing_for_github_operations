@@ -1,5 +1,7 @@
 from mpi4py import MPI
 from dolfinx import mesh
+import numpy as np
+
 domain = mesh.create_unit_square(MPI.COMM_WORLD, 8, 8, mesh.CellType.quadrilateral)
 
 from dolfinx.fem import FunctionSpace
@@ -46,5 +48,12 @@ error_max = numpy.max(numpy.abs(uD.x.array-uh.x.array))
 if domain.comm.rank == 0:
     print(f"Error_L2 : {error_L2:.2e}")
     print(f"Error_max : {error_max:.2e}")
+    np.savetxt('test_folder/err_vals',[error_L2, error_max])
 
+    o1 = [[1,2,3],[4,5,6]]
+    o2 = [[3,4],[5,6]]
+    o3 = 3.2546
+    o4 = 'hello there'
+    print(o1,'\n',o2,'\n',o3)
+    print(o4)
     
