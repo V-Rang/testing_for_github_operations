@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: run code
         uses: actions/checkout@v2
+      - name: install numpy
+        run: pip install numpy
       # - name: run the file
       #   run: mpirun -n 1 python3 -u test_file.py
       # -name: print current dir
