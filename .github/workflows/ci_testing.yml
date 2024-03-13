@@ -10,9 +10,9 @@ defaults:
 jobs:
   style:
     runs-on: ubuntu-22.04
-    container:
+    # container:
     #   image: dolfinx/dolfinx:stable
-      options: --user 1001 --privileged 
+      # options: --user 1001 --privileged 
     name: CI test
     steps:
       - name: run code
