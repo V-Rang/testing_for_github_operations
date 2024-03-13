@@ -24,5 +24,4 @@ jobs:
       - name: produce output
         run: python3 ./test_script.py
         run: |
-        output= $(python3 ./test_script.py)
-        echo $output
+        print(python3 ./test_script.py)
