@@ -21,8 +21,8 @@ jobs:
       #   run: mpirun -n 1 python3 -u test_file.py
       # -name: print current dir
         # run: pwd
-      # - name: change directory
-        # run: cd test_folder && python3 ./test_script.py >> sample.txt
+      - name: change directory
+        run: cd ./test_folder && python3 ./test_script.py >> sample.txt
       # - name: Validation
         # run: echo $output
         # run: | 
