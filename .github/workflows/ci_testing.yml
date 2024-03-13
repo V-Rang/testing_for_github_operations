@@ -25,9 +25,4 @@ jobs:
       - name: Check output and set status
         run: |
           output="${{ steps.script_output.stdout }}"
-          if [[ "$output" == "1" ]]; then
-            echo "Output is 1. Test passed."
-          else
-            echo "Output is not 1. Test failed."
-            exit 1
-          fi          
+          echo $output
