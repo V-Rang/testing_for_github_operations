@@ -1,6 +1,7 @@
 from mpi4py import MPI
 from dolfinx import mesh
 import numpy as np
+import pickle
 
 domain = mesh.create_unit_square(MPI.COMM_WORLD, 8, 8, mesh.CellType.quadrilateral)
 
@@ -54,6 +55,11 @@ if domain.comm.rank == 0:
     o2 = [[3,4],[5,6]]
     o3 = 3.2546
     o4 = 'hello there'
-    print(o1,'\n',o2,'\n',o3)
-    print(o4)
-    
+    data = {'arr_1':o1,'arr_2':o2,'val_1':o3}
+    # np.save('test_folder/outputs.npy',[o1,o2,o3,o4])
+    with open('test_folder/outputs.pickle','wb') as f:
+        pickle.dump(data,f)
+
+
+    # print(o1,'\n',o2,'\n',o3)
+    # print(o4)
