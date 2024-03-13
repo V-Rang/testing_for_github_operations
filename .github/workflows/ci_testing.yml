@@ -28,7 +28,8 @@ jobs:
 
       - name: change directory
         run: |
-        cd ./test_folder && output=$(python3 ./test_script.py) && 
+        cd ./test_folder && 
+        output=$(python3 ./test_script.py) && 
         echo $output
         
         
