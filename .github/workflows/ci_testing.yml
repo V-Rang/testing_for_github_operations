@@ -27,9 +27,7 @@ jobs:
       #   run: cd ./test_folder && python3 ./test_script.py >> sample.txt
 
       - name: change directory
-        run: cd ./test_folder && output=$(python3 ./test_script.py) && echo $output
-      - name: variable value
-        run: echo $trash
+        run: cd ./test_folder && output=$(python3 ./test_script.py) && echo $output && if[["$output" == "1"]]; then exit fi
 
       # - name: Validation
         # run: echo $output
