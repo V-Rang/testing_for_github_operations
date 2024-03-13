@@ -10,13 +10,12 @@ defaults:
 jobs:
   style:
     runs-on: ubuntu-22.04
-      container:
-        image: dolfinx/dolfinx:stable
-        options: --user 1001 -privileged
-      name: CI test
-      steps:
-        - name: run code
-          uses: actions/checkout@v2
-        - name: Query modules loaded
-          run: module list
-          
+    container:
+      image: dolfinx/dolfinx:stable
+      options: --user 1001 --privileged 
+    name: CI test
+    steps:
+      - name: run code
+        uses: actions/checkout@v2
+      - name: Query modules loaded
+        run: module list
