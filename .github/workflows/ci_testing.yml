@@ -15,8 +15,8 @@ jobs:
       options: --user 1001 --privileged 
     name: CI test
     steps:
-      # - name: run code
-      #   uses: actions/checkout@v2
+      - name: run code
+        uses: actions/checkout@v2
       # - name: run the file
       #   run: mpirun -n 1 python3 -u test_file.py
       # -name: print current dir
