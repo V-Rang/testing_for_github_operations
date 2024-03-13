@@ -10,38 +10,21 @@ defaults:
 jobs:
   style:
     runs-on: ubuntu-22.04
-    # container:
-    #   image: dolfinx/dolfinx:stable
-      # options: --user 1001 --privileged 
+    container:
+      image: dolfinx/dolfinx:stable
+      options: --user 1001 --privileged 
     name: CI test
     steps:
       - name: run code
         uses: actions/checkout@v2
       - name: install numpy
         run: pip install numpy
-      # - name: run the file
-      #   run: mpirun -n 1 python3 -u test_file.py
-      # -name: print current dir
-        # run: pwd
-      # - name: change directory
-      #   run: cd ./test_folder && python3 ./test_script.py >> sample.txt
-
-      - name: change directory
+      - name: run the file
+        run: mpirun -n 1 python3 -u test_file.py
+      - name: change directory and validate
         run: |
           cd ./test_folder && 
           output=$(python3 ./test_script.py) && 
           if [[ "$output" == "0" ]]; then
             exit 1
           fi
-
-        
-        
-      # - name: Validation
-        # run: echo $output
-        # run: | 
-      #   cd test_folder 
-      #   output = $(python3 ./test_script.py)
-      #   echo "::set-output name=output::$output"
-      #   id: run_test
-      # -name: print result
-      #   run: echo $output
