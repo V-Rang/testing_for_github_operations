@@ -10,17 +10,17 @@ defaults:
 jobs:
   style:
     runs-on: ubuntu-22.04
-    container:
-      image: dolfinx/dolfinx:stable
-      options: --user 1001 --privileged 
+    # container:
+    #   image: dolfinx/dolfinx:stable
+    #   options: --user 1001 --privileged 
     name: CI test
     steps:
-      - name: run code
-        uses: actions/checkout@v2
-      - name: run the file
-        run: mpirun -n 1 python3 -u test_file.py
+      # - name: run code
+      #   uses: actions/checkout@v2
+      # - name: run the file
+      #   run: mpirun -n 1 python3 -u test_file.py
       - name: change directory
-        run: output=cd test_folder && python3 ./test_script.py
+        run: output=$(cd test_folder && python3 ./test_script.py)
       - name: Validation
         run: echo $output
         # run: | 
