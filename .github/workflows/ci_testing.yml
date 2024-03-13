@@ -30,7 +30,7 @@ jobs:
         run: |
           cd ./test_folder && 
           output=$(python3 ./test_script.py) && 
-          if[[ "$output" == "1" ]]; then
+          if [[ "$output" == "1" ]]; then
             exit
           fi
 
