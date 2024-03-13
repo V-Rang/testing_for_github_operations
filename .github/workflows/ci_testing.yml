@@ -20,9 +20,6 @@ jobs:
       - name: run the file
         run: mpirun -n 1 python3 -u test_file.py
       - name: Produce results
-        run: cd test_folder && python3 ./test_script.py
-        id: script_output
-      - name: Check output and set status
         run: |
-          output="${{ steps.script_output.stdout }}"
-          echo $output
+        output= $(cd test_folder && python3 ./test_script.py)
+        echo $output
