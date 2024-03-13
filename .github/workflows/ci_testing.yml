@@ -31,7 +31,7 @@ jobs:
           cd ./test_folder && 
           output=$(python3 ./test_script.py) && 
           if [[ "$output" == "1" ]]; then
-            exit
+            exit 1
           fi
 
         
