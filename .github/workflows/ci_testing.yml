@@ -32,6 +32,8 @@ jobs:
         run: output=$(cat ./test_folder/sample.txt)
       - name: varible value
         run: echo $output
+      -name: actual value
+        run: echo $(cat ./test_folder/sample.txt)
       # - name: Validation
         # run: echo $output
         # run: | 
