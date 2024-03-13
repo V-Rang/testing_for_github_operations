@@ -19,8 +19,8 @@ jobs:
       #   uses: actions/checkout@v2
       # - name: run the file
       #   run: mpirun -n 1 python3 -u test_file.py
-      -name: print current dir
-        run: pwd
+      # -name: print current dir
+        # run: pwd
       # - name: change directory
         # run: cd test_folder && python3 ./test_script.py >> sample.txt
       # - name: Validation
