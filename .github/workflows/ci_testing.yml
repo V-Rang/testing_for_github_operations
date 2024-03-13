@@ -20,11 +20,14 @@ jobs:
       - name: run the file
         run: mpirun -n 1 python3 -u test_file.py
       - name: Produce results
-        run: cd test_folder && python3 test_script.py
+        run: cd test_folder && python3 ./test_script.py
         id: script_output
-        env:
-          OUTPUT: ${{ steps.script_output.outputs.output }}
-      - name: Check output
+      - name: Check output and set status
         run: |
-          output="${{ env.output }}"
-          echo "Script output: $output"
+          output="${{ steps.script_output.stdout }}"
+          if [[ "$output" == "1" ]]; then
+            echo "Output is 1. Test passed."
+          else
+            echo "Output is not 1. Test failed."
+            exit 1
+          fi          
