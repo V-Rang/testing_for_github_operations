@@ -29,7 +29,7 @@ jobs:
       - name: change directory
         run: cd ./test_folder && output=$(python3 ./test_script.py)
       - name: variable value
-        run: echo $output
+        run: echo $trash
 
       # - name: Validation
         # run: echo $output
