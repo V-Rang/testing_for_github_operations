@@ -8,4 +8,4 @@ arr_1 = data['arr_1']
 arr_2 = data['arr_2']
 value = data['val_1']
 
-print("hello")
+print("1")
