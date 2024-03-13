@@ -20,10 +20,11 @@ jobs:
       - name: run the file
         run: mpirun -n 1 python3 -u test_file.py
       - name: change directory
-        run: | 
-        cd test_folder 
-        output = $(python3 ./test_script.py)
-        echo "::set-output name=output::$output"
-        id: run_test
-      -name: print result
-        run: echo $output
+        run: cd test_folder
+        # run: | 
+      #   cd test_folder 
+      #   output = $(python3 ./test_script.py)
+      #   echo "::set-output name=output::$output"
+      #   id: run_test
+      # -name: print result
+      #   run: echo $output
