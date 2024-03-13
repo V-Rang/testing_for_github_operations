@@ -27,13 +27,10 @@ jobs:
       #   run: cd ./test_folder && python3 ./test_script.py >> sample.txt
 
       - name: change directory
-        run: cd ./test_folder && python3 ./test_script.py >> sample.txt
-      - name: read file
-        run: output=$(cat ./test_folder/sample.txt)
-      - name: varible value
+        run: cd ./test_folder && output=$(python3 ./test_script.py)
+      - name: variable value
         run: echo $output
-      -name: actual value
-        run: echo $(cat ./test_folder/sample.txt)
+
       # - name: Validation
         # run: echo $output
         # run: | 
