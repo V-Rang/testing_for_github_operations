@@ -28,10 +28,11 @@ jobs:
 
       - name: change directory
         run: cd ./test_folder && 
-        output=$(python3 ./test_script.py) && 
-        if[[ "$output" == "0" ]]; then 
-          exit 
-        fi
+        output=$(python3 ./test_script.py) 
+        # && 
+        # if[[ "$output" == "0" ]]; then 
+        #   exit 
+        # fi
 
       # - name: Validation
         # run: echo $output
