@@ -11,7 +11,8 @@ jobs:
   style:
     runs-on: ubuntu-22.04
     container:
-      image: dolfinx/dolfinx:stable
+      # image: dolfinx/dolfinx:stable
+      image: venuvgr/dolfinx_image:v1
       options: --user 1001 --privileged 
     name: CI test
     steps:
@@ -28,3 +29,8 @@ jobs:
           if [[ "$output" == "0" ]]; then
             exit 1
           fi
+      - name: checking ruff usage
+        run: |
+          cd ./test_folder &&
+          ruff check . 
+          ruff format --check .
