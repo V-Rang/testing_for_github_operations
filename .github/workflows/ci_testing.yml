@@ -1,0 +1,30 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash -l {0}
+jobs:
+  style:
+    runs-on: ubuntu-22.04
+    container:
+      image: dolfinx/dolfinx:stable
+      options: --user 1001 --privileged 
+    name: CI test
+    steps:
+      - name: run code
+        uses: actions/checkout@v2
+      - name: install numpy
+        run: pip install numpy
+      - name: run the file
+        run: mpirun -n 1 python3 -u test_file.py
+      - name: change directory and validate
+        run: |
+          cd ./test_folder && 
+          output=$(python3 ./test_script.py) && 
+          if [[ "$output" == "0" ]]; then
+            exit 1
+          fi
