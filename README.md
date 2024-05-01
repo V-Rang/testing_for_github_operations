@@ -2,9 +2,7 @@
 
 # hippylibx
 The next version of hIPPYlib powered by dolfinx
-```
-https://hippylib.github.io
-```
+
 ```
          __        ______  _______   _______   __      __  __  __  __     ______       _____  
         /  |      /      |/       \ /       \ /  \    /  |/  |/  |/  |    \    \      /    /     
@@ -17,6 +15,10 @@ https://hippylib.github.io
         $$/   $$/ $$$$$$/ $$/       $$/           $$/     $$/ $$/ $$$$$$$/_ $$_/      \_$$_\  
 
 ```
+```
+https://hippylib.github.io
+```
+
 hIPPYlibx implements state-of-the-art scalable algorithms for deterministic and Bayesian inverse problems governed by partial differential equations (PDEs). It builds on FEniCS (a parallel finite element element library) for the discretization of the PDE and on PETSc for scalable and efficient linear algebra operations and solvers.
 
 For building instructions, see the file INSTALL.md. Copyright information and licensing restrictions can be found in the file COPYRIGHT.
