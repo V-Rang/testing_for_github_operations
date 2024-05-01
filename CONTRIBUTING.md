@@ -24,14 +24,14 @@ Use a pull request (PR) toward the `hippylibx:master` branch to propose your con
 
 See the [Quick Summary](#quick-summary) section for the main highlights of our GitHub workflow. For more details, consult the following sections and refer back to them before issuing pull requests:
 
-    GitHub Workflow
-        hIPPYlib Organization
-        New Feature Development
-        Developer Guidelines
-        Pull Requests
-        Pull Request Checklist
-    Automated Testing
-    Contact Information
+* GitHub Workflow
+    ** hIPPYlib Organization
+    ** New Feature Development
+    ** Developer Guidelines
+    ** Pull Requests
+    ** Pull Request Checklist
+    ** Automated Testing
+*Contact Information
 
 Contributing to hIPPYlib requires knowledge of Git and, likely, inverse problems. If you are new to Git, see the GitHub learning resources. To learn more about inverse problems, see our tutorial page.
 
