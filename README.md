@@ -2,8 +2,9 @@
 
 # hippylibx
 The next version of hIPPYlib powered by dolfinx
-
-`https://hippylib.github.io`
+```
+https://hippylib.github.io
+```
 ```
          __        ______  _______   _______   __      __  __  __  __     ______       _____  
         /  |      /      |/       \ /       \ /  \    /  |/  |/  |/  |    \    \      /    /     
