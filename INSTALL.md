@@ -26,3 +26,5 @@
 
 # FEniCSx installation
 ## Run FEniCSx from Docker (Linux, MacOS, Windows)
+`FEniCSx` can be run easily using their prebuilt `Docker` images.
+First you will need to install [Docker](https://www.docker.com/) on your system. MacOS and Windows users should preferably use Docker for Mac or Docker for Windows --- if it is compatible with their system --- instead of the legacy version Docker Toolbox.
