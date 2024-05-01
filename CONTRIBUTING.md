@@ -151,18 +151,19 @@ git push -u origin feature-dev
 Before a PR can be merged, it should satisfy the following:
 
 - [ ] CI runs without errors.
-    Update CHANGELOG:
-        Is this a new feature users need to be aware of? New or updated application or tutorial?
-        Does it make sense to create a new section in the CHANGELOG to group with other related features?
-    New examples/applications/tutorials:
-        All new examples/applications/tutorials run as expected.
-        Add a fast version of the example/application/tutorial to Travis CI
-    New capability:
-        All significant new classes, methods and functions have sphinx-style documentation in source comments.
-        Add new examples/applications/tutorials to highlight the new capability.
-        For new classes, functions, or modules, edit the corresponding .rst file in the doc folder.
-        If this is a major new feature, consider mentioning in the short summary inside README (rare).
-        If this is a C++ extension, the package_data dictionary in setup.py should include new files.
+
+- [ ] Update `CHANGELOG`:
+    - [ ] Is this a new feature users need to be aware of? New or updated application or tutorial?
+    - [ ] Does it make sense to create a new section in the CHANGELOG to group with other related features?
+- [ ] New examples/applications/tutorials:
+    - [ ] All new examples/applications/tutorials run as expected.
+    - [ ] Add a fast version of the example/application/tutorial to Travis CI
+- [ ] New capability:
+    - [ ] All significant new classes, methods and functions have sphinx-style documentation in source comments.
+    - [ ] Add new examples/applications/tutorials to highlight the new capability.
+    - [ ] For new classes, functions, or modules, edit the corresponding .rst file in the doc folder.
+    - [ ] If this is a major new feature, consider mentioning in the short summary inside README (rare).
+    - [ ] If this is a C++ extension, the package_data dictionary in setup.py should include new files.
 
 ### Automated Testing
 
