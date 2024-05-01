@@ -38,11 +38,11 @@ Contributing to hIPPYlib requires knowledge of Git and, likely, inverse problems
 By submitting a pull request, you are affirming the [Developer's Certificate of Origin](#developers-certificate-of-origin-11) at the end of this file.
 ### Quick Summary
 
-    We encourage you to [join the hIPPYlib organization](#hippylib-organization) and create development branches off `hippylibx:master`.
-    Please follow the [developer guidelines](#developer-guidelines), in particular with regards to documentation and code styling.
-    Pull requests should be issued toward `hippylibx:master`. Make sure to check the items off the [Pull Request Checklist](#pull-request-checklist).
-    After approval, hIPPYlib developers merge the PR in `hippylibx:master`.
-    Don't hesitate to [contact us](#contact-information) if you have any questions.
+- We encourage you to [join the hIPPYlib organization](#hippylib-organization) and create development branches off `hippylibx:master`.
+- Please follow the [developer guidelines](#developer-guidelines), in particular with regards to documentation and code styling.
+- Pull requests should be issued toward `hippylibx:master`. Make sure to check the items off the [Pull Request Checklist](#pull-request-checklist).
+- After approval, hIPPYlib developers merge the PR in `hippylibx:master`.
+- Don't hesitate to [contact us](#contact-information) if you have any questions.
 
 ### GitHub Workflow
 
