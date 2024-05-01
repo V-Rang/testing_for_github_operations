@@ -94,50 +94,49 @@ git checkout -b feature-dev
 # branch to track the github branch (for "git pull"):
 git push -u origin feature-dev
 ````
-    We prefer that you create the new feature branch as a fork. To allow hIPPYlib developers to edit the PR, please enable upstream edits.
+- **We prefer that you create the new feature branch as a fork.** To allow hIPPYlib developers to edit the PR, please [enable upstream edits](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork).
 
-    The typical feature branch name is new-feature-dev, e.g. optimal_exp_design-dev. While not frequent in hIPPYlib, other suffixes are possible, e.g. -fix, -doc, etc.
+- The typical feature branch name is `new-feature-dev`, e.g. `optimal_exp_design-dev`. While not frequent in hIPPYlib, other suffixes are possible, e.g. `-fix`, `-doc`, etc.
 
 ### Developer Guidelines
 
-    Keep the code lean and as simple as possible
-        Well-designed simple code is frequently more general and powerful.
-        Lean code base is easier to understand by new collaborators.
-        New features should be added only if they are necessary or generally useful.
-        Code must be compatible with Python 3.
-        When adding new features add an example in the application folder and/or a new notebook in the tutorial folder.
-        The preferred way to export solutions for visualization in paraview is using dl.XDMFFile
+- Keep the code lean and as simple as possible
+    - Well-designed simple code is frequently more general and powerful.
+    - Lean code base is easier to understand by new collaborators.
+    - New features should be added only if they are necessary or generally useful.
+    - Code must be compatible with Python 3.
+    - When adding new features add an example in the `example` folder.
+    - The preferred way to export solutions for visualization in paraview is using `dl.XDMFFile`
 
-    Keep the code general and reasonably efficient
-        Main goal is fast prototyping for research.
-        When in doubt, generality wins over efficiency.
-        Respect the needs of different users (current and/or future).
+- Keep the code general and reasonably efficient
+    - Main goal is fast prototyping for research.
+    - When in doubt, generality wins over efficiency.
+    - Respect the needs of different users (current and/or future).
 
-    Keep things separate and logically organized
-        General usage features go in hIPPYlib (implemented in as much generality as possible), non-general features go into external apps/projects.
-        Inside hIPPYlib, compartmentalize between modeling, algorithms, utils, etc.
-        Contributions that are project-specific or have external dependencies are allowed (if they are of broader interest), but should be #ifdef-ed and not change the code by default.
+- Keep things separate and logically organized
+    - General usage features go in hIPPYlibx (implemented in as much generality as possible), non-general features go into external apps/projects.
+    - Inside hIPPYlibx, compartmentalize between modeling, algorithms, utils, etc.
+    - Contributions that are project-specific or have external dependencies are allowed (if they are of broader interest), but should be `#ifdef`-ed and not change the code by default.
 
-    Code specifics
-        All significant new classes, methods and functions have sphinx-style documentation in source comments.
-        Code styling should resemble existing code.
-        When manually resolving conflicts during a merge, make sure to mention the conflicted files in the commit message.
+- Code specifics
+    - All significant new classes, methods and functions have sphinx-style documentation in source comments.
+    - Code styling should resemble existing code.
+    - When manually resolving conflicts during a merge, make sure to mention the conflicted files in the commit message.
 
 ### Pull Requests
+- When your branch is ready for other developers to review / comment on the code, create a pull request towards `hippylibx:master`.
 
-    When your branch is ready for other developers to review / comment on the code, create a pull request towards hippylib:master.
+- Pull request typically have titles like:
 
-    Pull request typically have titles like:
-
-    Description [new-feature-dev]
+    `Description [new-feature-dev]`
 
     for example:
 
-    Bayesian Optimal Design of Experiments [oed-dev]
+    `Bayesian Optimal Design of Experiments [oed-dev]`
 
     Note the branch name suffix (in square brackets).
 
-    Titles may contain a prefix in square brackets to emphasize the type of PR. Common choices are: [DON'T MERGE], [WIP] and [DISCUSS], for example:
+- Titles may contain a prefix in square brackets to emphasize the type of PR. Common choices are: `[DON'T MERGE]`, `[WIP]` and `[DISCUSS]`, for example:
 
     [DISCUSS] Bayesian Optimal Design of Experiments [oed-dev]
 
