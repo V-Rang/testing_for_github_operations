@@ -48,7 +48,7 @@ By submitting a pull request, you are affirming the [Developer's Certificate of 
 
 The GitHub organization, [https://github.com/hippylib](https://github.com/hippylib), is the main developer hub for the hIPPYlib project.
 
-If you plan to make contributions or will like to stay up-to-date with changes in the code, we strongly encourage you to [join the hIPPYlib organization](hippylib-organization).
+If you plan to make contributions or will like to stay up-to-date with changes in the code, we *strongly encourage you* to *[join the hIPPYlib organization](hippylib-organization).*
 
 This will simplify the workflow (by providing you additional permissions), and will allow us to reach you directly with project announcements.
 ### hIPPYlib Organization
@@ -77,10 +77,10 @@ This will simplify the workflow (by providing you additional permissions), and w
 
 ```
 # Clone assuming you have setup your ssh keys on GitHub:
-git clone git@github.com:hippylibx/hippylibx.git
+git clone git@github.com:hippylib/hippylibx.git
 
 # Alternatively, clone using the "https" protocol:
-git clone https://github.com/hippylibx/hippylibx.git
+git clone https://github.com/hippylib/hippylibx.git
 
 # Create a new feature branch starting from "master":
 git checkout master
@@ -173,7 +173,7 @@ We use Github Actions CI to drive the default tests on the master and feature br
 
 ### Contact Information
 
-    Contact the hIPPYlib team by posting to the [GitHub issue tracker](https://github.com/hippylib/hippylibx/issues). Please perform a search to make sure your question has not been answered already.
+- Contact the hIPPYlib team by posting to the [GitHub issue tracker](https://github.com/hippylib/hippylibx/issues). Please perform a search to make sure your question has not been answered already.
 
 ### Slack channel
 
