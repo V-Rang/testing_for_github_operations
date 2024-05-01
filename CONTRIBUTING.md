@@ -33,55 +33,54 @@ See the [Quick Summary](#quick-summary) section for the main highlights of our G
     - [Automated Testing](#automated-testing)
 - [Contact Information](#contact-information)
 
-Contributing to hIPPYlib requires knowledge of Git and, likely, inverse problems. If you are new to Git, see the GitHub learning resources. To learn more about inverse problems, see our tutorial page.
+Contributing to hIPPYlib requires knowledge of Git and, likely, inverse problems. If you are new to Git, see the [GitHub learning resources](https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources). To learn more about inverse problems, see our [tutorial page](https://hippylib.github.io/).
 
-By submitting a pull request, you are affirming the Developer's Certificate of Origin at the end of this file.
+By submitting a pull request, you are affirming the [Developer's Certificate of Origin](#developers-certificate-of-origin-11) at the end of this file.
 ### Quick Summary
 
-    We encourage you to join the hIPPYlib organization and create development branches off hippylib:master.
-    Please follow the developer guidelines, in particular with regards to documentation and code styling.
-    Pull requests should be issued toward hippylib:master. Make sure to check the items off the Pull Request Checklist.
-    After approval, hIPPYlib developers merge the PR in hippylib:master.
-    Don't hesitate to contact us if you have any questions.
+    We encourage you to [join the hIPPYlib organization](#hippylib-organization) and create development branches off `hippylibx:master`.
+    Please follow the [developer guidelines](#developer-guidelines), in particular with regards to documentation and code styling.
+    Pull requests should be issued toward `hippylibx:master`. Make sure to check the items off the [Pull Request Checklist](#pull-request-checklist).
+    After approval, hIPPYlib developers merge the PR in `hippylibx:master`.
+    Don't hesitate to [contact us](#contact-information) if you have any questions.
 
 ### GitHub Workflow
 
-The GitHub organization, https://github.com/hippylib, is the main developer hub for the hIPPYlib project.
+The GitHub organization, [https://github.com/hippylib](#https://github.com/hippylib), is the main developer hub for the hIPPYlib project.
 
-If you plan to make contributions or will like to stay up-to-date with changes in the code, we strongly encourage you to join the hIPPYlib organization.
+If you plan to make contributions or will like to stay up-to-date with changes in the code, we strongly encourage you to [join the hIPPYlib organization](#hippylib-organization).
 
 This will simplify the workflow (by providing you additional permissions), and will allow us to reach you directly with project announcements.
 ### hIPPYlib Organization
 
-    Before you can start, you need a GitHub account, here are a few suggestions:
-        Create the account at: github.com/join.
-        For easy identification, please add your name and maybe a picture of you at: https://github.com/settings/profile.
-        To receive notification, set a primary email at: https://github.com/settings/emails.
-        For password-less pull/push over SSH, add your SSH keys at: https://github.com/settings/keys.
+- Before you can start, you need a GitHub account, here are a few suggestions:
+    - Create the account at: github.com/join.
+    - For easy identification, please add your name and maybe a picture of you at: [https://github.com/settings/profile](https://github.com/settings/profile).
+    - To receive notification, set a primary email at: [https://github.com/settings/emails](https://github.com/settings/emails).
+    - For password-less pull/push over SSH, add your SSH keys at: [https://github.com/settings/keys](https://github.com/settings/keys).
 
-    Contact us for an invitation to join the hIPPYlib GitHub organization.
+- [Contact us](#contact-information) for an invitation to join the hIPPYlib GitHub organization.
 
-    You should receive an invitation email, which you can directly accept. Alternatively, after logging into GitHub, you can accept the invitation at the top of https://github.com/hippylib.
+- You should receive an invitation email, which you can directly accept. Alternatively, *after logging into GitHub*, you can accept the invitation at the top of [https://github.com/hippylib](https://github.com/hippylib).
 
-    Consider making your membership public by going to https://github.com/orgs/hippylib/people and clicking on the organization visibility dropbox next to your name.
+- Consider making your membership public by going to [https://github.com/orgs/hippylib/people](https://github.com/orgs/hippylib/people) and clicking on the organization visibility dropbox next to your name.
 
-    Project discussions and announcements will be posted at https://github.com/orgs/hippylib/teams/everyone.
+- Project discussions and announcements will be posted at [https://github.com/orgs/hippylib/teams/everyone](https://github.com/orgs/hippylib/teams/everyone).
 
-    The hIPPYlib source code is in the hippylib repository.
-
-    The website is in the web repository.
+- The hIPPYlibx source code is in the [hippylibx](https://github.com/hippylib/hippylibx) repository.
 
 ### New Feature Development
 
-A new feature should be important enough that at least one person, the proposer, is willing to work on it and be its champion.
+- A new feature should be important enough that at least one person, the proposer, is willing to work on it and be its champion.
 
-The proposer creates a branch for the new feature (with suffix -dev), off the master branch, or another existing feature branch, for example:
+- The proposer creates a branch for the new feature (with suffix -dev), off the master branch, or another existing feature branch, for example:
 
+```
 # Clone assuming you have setup your ssh keys on GitHub:
-git clone git@github.com:hippylib/hippylib.git
+git clone git@github.com:hippylibx/hippylibx.git
 
 # Alternatively, clone using the "https" protocol:
-git clone https://github.com/hippylib/hippylib.git
+git clone https://github.com/hippylibx/hippylibx.git
 
 # Create a new feature branch starting from "master":
 git checkout master
@@ -94,7 +93,7 @@ git checkout -b feature-dev
 # (One time only) push the branch to github and setup your local
 # branch to track the github branch (for "git pull"):
 git push -u origin feature-dev
-
+````
     We prefer that you create the new feature branch as a fork. To allow hIPPYlib developers to edit the PR, please enable upstream edits.
 
     The typical feature branch name is new-feature-dev, e.g. optimal_exp_design-dev. While not frequent in hIPPYlib, other suffixes are possible, e.g. -fix, -doc, etc.
