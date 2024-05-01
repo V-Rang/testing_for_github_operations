@@ -46,6 +46,5 @@ docker build -t hIPPYlibx_image:v1 .
 ```
 docker run -it -v $(pwd):/home hIPPYlibx_image:v1
 ```
-###
-Other ways to build FEniCS
+### Other ways to build FEniCSx
 For instructions on other ways to build `FEniCSx`, we refer to the FEniCSx project [download page](https://github.com/FEniCS/dolfinx#installation). Note that this instructions always refer to the latest version of FEniCSx which may or may not be yet supported by hIPPYlibx. Always check the hIPPYlibx website for supported FEniCSx versions.
