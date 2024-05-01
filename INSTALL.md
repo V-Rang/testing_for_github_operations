@@ -25,6 +25,14 @@
 * `slepc4py` (version 3.10.0 or above)
 
 # FEniCSx installation
+All the  methods to install `FEniCSx` are given on the FEniCSx [installation](https://github.com/FEniCS/dolfinx#installation) page.
+We recommend using their prebuilt `Docker` images.
 ## Run FEniCSx from Docker (Linux, MacOS, Windows)
-`FEniCSx` can be run easily using their prebuilt `Docker` images.
 First you will need to install [Docker](https://www.docker.com/) on your system. MacOS and Windows users should preferably use Docker for Mac or Docker for Windows --- if it is compatible with their system --- instead of the legacy version Docker Toolbox.
+
+For `FEniCSx` version 0.8.0, the Docker image is pulled using 
+```
+docker pull dolfinx/dolfinx:v0.8.0
+```
+The above command can be specified in a [`Dockerfile`](https://github.com/hippylib/hippylibx/blob/main/Dockerfile) as in the `hIPPYlibx` directory.
+
