@@ -44,14 +44,14 @@ By submitting a pull request, you are affirming the Developer's Certificate of O
     After approval, hIPPYlib developers merge the PR in hippylib:master.
     Don't hesitate to contact us if you have any questions.
 
-GitHub Workflow
+### GitHub Workflow
 
 The GitHub organization, https://github.com/hippylib, is the main developer hub for the hIPPYlib project.
 
 If you plan to make contributions or will like to stay up-to-date with changes in the code, we strongly encourage you to join the hIPPYlib organization.
 
 This will simplify the workflow (by providing you additional permissions), and will allow us to reach you directly with project announcements.
-hIPPYlib Organization
+### hIPPYlib Organization
 
     Before you can start, you need a GitHub account, here are a few suggestions:
         Create the account at: github.com/join.
@@ -71,7 +71,7 @@ hIPPYlib Organization
 
     The website is in the web repository.
 
-New Feature Development
+### New Feature Development
 
 A new feature should be important enough that at least one person, the proposer, is willing to work on it and be its champion.
 
@@ -99,7 +99,7 @@ git push -u origin feature-dev
 
     The typical feature branch name is new-feature-dev, e.g. optimal_exp_design-dev. While not frequent in hIPPYlib, other suffixes are possible, e.g. -fix, -doc, etc.
 
-Developer Guidelines
+### Developer Guidelines
 
     Keep the code lean and as simple as possible
         Well-designed simple code is frequently more general and powerful.
@@ -124,7 +124,7 @@ Developer Guidelines
         Code styling should resemble existing code.
         When manually resolving conflicts during a merge, make sure to mention the conflicted files in the commit message.
 
-Pull Requests
+### Pull Requests
 
     When your branch is ready for other developers to review / comment on the code, create a pull request towards hippylib:master.
 
@@ -148,7 +148,7 @@ Pull Requests
 
     Track the Travis CI continuous integration builds at the end of the PR. These should run clean, so address any errors as soon as possible.
 
-Pull Request Checklist
+### Pull Request Checklist
 
 Before a PR can be merged, it should satisfy the following:
 
@@ -166,7 +166,7 @@ Before a PR can be merged, it should satisfy the following:
         If this is a major new feature, consider mentioning in the short summary inside README (rare).
         If this is a C++ extension, the package_data dictionary in setup.py should include new files.
 
-Automated Testing
+### Automated Testing
 
 We use Travis CI to drive the default tests on the master and feature branches. See the .travis file and the logs at https://travis-ci.org/hi/hippylib.
 
@@ -174,14 +174,14 @@ Testing using Travis CI should be kept lightweight, as there is a 50 minute time
 
     Tests on the master branch are triggered whenever a push is issued on this branch.
 
-Contact Information
+### Contact Information
 
     Contact the hIPPYlib team by posting to the GitHub issue tracker. Please perform a search to make sure your question has not been answered already.
 
-Slack channel
+### Slack channel
 
 The hIPPYlib slack channel is a good resource to request and receive help with using hIPPYlib. Everyone is invited to read and take part in discussions. Discussions about development of new features in hIPPYlib also take place here. You can join our Slack community by filling in this form.
-Developer's Certificate of Origin 1.1
+### [Developer's Certificate of Origin 1.1](https://developercertificate.org/)
 
 By making a contribution to this project, I certify that:
 
