@@ -36,7 +36,7 @@ docker pull dolfinx/dolfinx:v0.8.0
 ```
 The above command can be specified in a [`Dockerfile`](https://github.com/hippylib/hippylibx/blob/main/Dockerfile) as in the `hIPPYlibx` directory.
 
-Once the `Dockerfile` is built, it can be run using the `docker run` command. The present  working directory can be shared when running the docker image which allows for ease in navigating the directory of `hIPPYlibx` files inside the Docker container.
+Once the `Dockerfile` is built, it can be run using the `docker run` command. The present  working directory can be shared when running the docker image which allows for ease in navigating the `hIPPYlibx` directory inside the Docker container.
 
 For instance the docker image can be built and run using the following commands:
 ```
@@ -48,4 +48,4 @@ docker run -it -v $(pwd):/home hIPPYlibx_image:v1
 ```
 ###
 Other ways to build FEniCS
-For instructions on other ways to build `FEniCSx`, we refer to the FEniCS project [download page](https://github.com/FEniCS/dolfinx#installation). Note that this instructions always refer to the latest version of FEniCSx which may or may not be yet supported by hIPPYlibx. Always check the hIPPYlibx website for supported FEniCSx versions.
+For instructions on other ways to build `FEniCSx`, we refer to the FEniCSx project [download page](https://github.com/FEniCS/dolfinx#installation). Note that this instructions always refer to the latest version of FEniCSx which may or may not be yet supported by hIPPYlibx. Always check the hIPPYlibx website for supported FEniCSx versions.
