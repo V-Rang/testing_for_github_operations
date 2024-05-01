@@ -46,9 +46,9 @@ By submitting a pull request, you are affirming the [Developer's Certificate of 
 
 ### GitHub Workflow
 
-The GitHub organization, [https://github.com/hippylib](#https://github.com/hippylib), is the main developer hub for the hIPPYlib project.
+The GitHub organization, [https://github.com/hippylib](https://github.com/hippylib), is the main developer hub for the hIPPYlib project.
 
-If you plan to make contributions or will like to stay up-to-date with changes in the code, we strongly encourage you to [join the hIPPYlib organization](#hippylib-organization).
+If you plan to make contributions or will like to stay up-to-date with changes in the code, we strongly encourage you to [join the hIPPYlib organization](hippylib-organization).
 
 This will simplify the workflow (by providing you additional permissions), and will allow us to reach you directly with project announcements.
 ### hIPPYlib Organization
