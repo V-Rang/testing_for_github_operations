@@ -167,24 +167,27 @@ Before a PR can be merged, it should satisfy the following:
 
 ### Automated Testing
 
-We use Travis CI to drive the default tests on the master and feature branches. See the .travis file and the logs at https://travis-ci.org/hi/hippylib.
+We use Travis CI to drive the default tests on the master and feature branches. See the `.travis` file and the logs at [https://travis-ci.org/hi/hippylib](https://travis-ci.org/hi/hippylib).
 
 Testing using Travis CI should be kept lightweight, as there is a 50 minute time constraint on jobs.
 
-    Tests on the master branch are triggered whenever a push is issued on this branch.
+    Tests on the `master` branch are triggered whenever a push is issued on this branch.
 
 ### Contact Information
 
-    Contact the hIPPYlib team by posting to the GitHub issue tracker. Please perform a search to make sure your question has not been answered already.
+    Contact the hIPPYlib team by posting to the [GitHub issue tracker](https://github.com/hippylib/hippylibx/issues). Please perform a search to make sure your question has not been answered already.
 
 ### Slack channel
 
-The hIPPYlib slack channel is a good resource to request and receive help with using hIPPYlib. Everyone is invited to read and take part in discussions. Discussions about development of new features in hIPPYlib also take place here. You can join our Slack community by filling in this form.
+The hIPPYlib slack channel is a good resource to request and receive help with using hIPPYlib. Everyone is invited to read and take part in discussions. Discussions about development of new features in hIPPYlib also take place here. You can join our Slack community by filling in [this form](https://docs.google.com/forms/d/e/1FAIpQLSf4eg3dtOwk1dCqKY9_R21beOJVvy6ECuSB2d1FltVXNwXqMw/viewform).
+
 ### [Developer's Certificate of Origin 1.1](https://developercertificate.org/)
 
 By making a contribution to this project, I certify that:
 
-(a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
+(a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; 
+
+or
 
 (b) The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or
 
