@@ -150,7 +150,7 @@ git push -u origin feature-dev
 
 Before a PR can be merged, it should satisfy the following:
 
-- []CI runs without errors.
+- [ ] CI runs without errors.
     Update CHANGELOG:
         Is this a new feature users need to be aware of? New or updated application or tutorial?
         Does it make sense to create a new section in the CHANGELOG to group with other related features?
