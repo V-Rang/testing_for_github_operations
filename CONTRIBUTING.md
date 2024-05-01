@@ -73,7 +73,7 @@ This will simplify the workflow (by providing you additional permissions), and w
 
 - A new feature should be important enough that at least one person, the proposer, is willing to work on it and be its champion.
 
-- The proposer creates a branch for the new feature (with suffix -dev), off the master branch, or another existing feature branch, for example:
+- The proposer creates a branch for the new feature (with suffix `-dev`), off the `master` branch, or another existing feature branch, for example:
 
 ```
 # Clone assuming you have setup your ssh keys on GitHub:
@@ -96,7 +96,7 @@ git push -u origin feature-dev
 ````
 - **We prefer that you create the new feature branch as a fork.** To allow hIPPYlib developers to edit the PR, please [enable upstream edits](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/allowing-changes-to-a-pull-request-branch-created-from-a-fork).
 
-- The typical feature branch name is `new-feature-dev`, e.g. `optimal_exp_design-dev`. While not frequent in hIPPYlib, other suffixes are possible, e.g. `-fix`, `-doc`, etc.
+- The typical feature branch name is `new-feature-dev`, e.g. `optimal_exp_design-dev`. While not frequent in hIPPYlibx, other suffixes are possible, e.g. `-fix`, `-doc`, etc.
 
 ### Developer Guidelines
 
@@ -144,7 +144,7 @@ git push -u origin feature-dev
 
 - List outstanding TODO items in the description.
 
-- Track the Travis CI [continuous integration](#automated-testing) builds at the end of the PR. These should run clean, so address any errors as soon as possible.
+- Track the Github Actions CI [continuous integration](#automated-testing) builds at the end of the PR. These should run clean, so address any errors as soon as possible.
 
 ### Pull Request Checklist
 
@@ -157,7 +157,7 @@ Before a PR can be merged, it should satisfy the following:
     - [ ] Does it make sense to create a new section in the CHANGELOG to group with other related features?
 - [ ] New examples/applications/tutorials:
     - [ ] All new examples/applications/tutorials run as expected.
-    - [ ] Add a fast version of the example/application/tutorial to Travis CI
+    - [ ] Add a fast version of the example/application/tutorial to Github Actions CI
 - [ ] New capability:
     - [ ] All significant new classes, methods and functions have sphinx-style documentation in source comments.
     - [ ] Add new examples/applications/tutorials to highlight the new capability.
@@ -167,11 +167,9 @@ Before a PR can be merged, it should satisfy the following:
 
 ### Automated Testing
 
-We use Travis CI to drive the default tests on the master and feature branches. See the `.travis` file and the logs at [https://travis-ci.org/hi/hippylib](https://travis-ci.org/hi/hippylib).
+We use Github Actions CI to drive the default tests on the master and feature branches. See the `.yml` file at [CI_testing.yml](https://github.com/hippylib/hippylibx/blob/main/.github/workflows/CI_testing.yml) 
 
-Testing using Travis CI should be kept lightweight, as there is a 50 minute time constraint on jobs.
-
-    Tests on the `master` branch are triggered whenever a push is issued on this branch.
+- Tests on the `master` branch are triggered whenever a push is issued on this branch.
 
 ### Contact Information
 
