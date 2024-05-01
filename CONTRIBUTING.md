@@ -196,4 +196,4 @@ or
 (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
 
 ---
-| *Acknowledgement*: We thank the [MFEM team](https://github.com/mfem) for allowing us to use their contributing guidelines file as template.
+<span style="border-left: 1px solid #ccc; padding-left: 10px;"></span> *Acknowledgement*: We thank the [MFEM team](https://github.com/mfem) for allowing us to use their contributing guidelines file as template.
