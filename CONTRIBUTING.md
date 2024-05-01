@@ -138,19 +138,19 @@ git push -u origin feature-dev
 
 - Titles may contain a prefix in square brackets to emphasize the type of PR. Common choices are: `[DON'T MERGE]`, `[WIP]` and `[DISCUSS]`, for example:
 
-    [DISCUSS] Bayesian Optimal Design of Experiments [oed-dev]
+    `[DISCUSS] Bayesian Optimal Design of Experiments [oed-dev]`
 
-    Add a description, appropriate labels and assign yourself to the PR. The hIPPYlib team will add reviewers as appropriate.
+- Add a description, appropriate labels and assign yourself to the PR. The hIPPYlib team will add reviewers as appropriate.
 
-    List outstanding TODO items in the description.
+- List outstanding TODO items in the description.
 
-    Track the Travis CI continuous integration builds at the end of the PR. These should run clean, so address any errors as soon as possible.
+- Track the Travis CI [continuous integration](#automated-testing) builds at the end of the PR. These should run clean, so address any errors as soon as possible.
 
 ### Pull Request Checklist
 
 Before a PR can be merged, it should satisfy the following:
 
-    CI runs without errors.
+    []CI runs without errors.
     Update CHANGELOG:
         Is this a new feature users need to be aware of? New or updated application or tutorial?
         Does it make sense to create a new section in the CHANGELOG to group with other related features?
