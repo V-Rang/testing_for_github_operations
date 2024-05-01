@@ -25,5 +25,4 @@
 * `slepc4py` (version 3.10.0 or above)
 
 # FEniCSx installation
-
-test text
+## Run FEniCSx from Docker (Linux, MacOS, Windows)
